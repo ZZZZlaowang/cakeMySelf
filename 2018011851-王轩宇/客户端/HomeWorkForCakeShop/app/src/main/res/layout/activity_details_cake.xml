@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".forCake.DetailsCake"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back"/>
+        <Button
+            android:id="@+id/btn_shopcar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加入购物车"
+            android:textSize="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@null"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/jinyao"
+            android:paddingRight="30dp"
+            android:text="6寸"/>
+        <TextView
+            android:id="@+id/jinyao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="仅要"
+            android:textColor="#ff0000"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:id="@+id/tv_pirce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2000￥"
+            android:layout_toRightOf="@id/jinyao"
+            android:paddingLeft="30dp"/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/img_big"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/cake"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"/>
+    <TextView
+        style="@style/detail"
+        android:id="@+id/tv_material"
+        android:text="【材料】：
+水果蛋糕 越吃越水灵的蛋糕，洋溢着青春、健康的气息。
+最佳食用温度：7℃，当天食用口感最佳。
+储存条件：2-7℃冷藏保存。 蛋糕请提前36小时预订！"/>
+    <TextView
+        style="@style/detail"
+        android:id="@+id/tv_packing"
+        android:text="【包装】：精致蛋糕盒包装，
+免费附送留言贺卡、一次性蛋糕用品一套"/>
+    <TextView
+        style="@style/detail"
+        android:id="@+id/tv_brand"
+        android:text="【品牌】：holiland/好利来蛋糕3点前下单可当天送达"/>
+    <TextView
+        style="@style/detail"
+        android:id="@+id/tv_place"
+        android:text="【送货范围】： 北京，昆明，成都，哈尔滨，长春，
+天津，西安，大连，吉林，合肥，太原，盘锦，抚顺，牡丹江，齐齐哈尔，
+大同，秦皇岛，佳木斯，延吉，本溪，鞍山，锦州，辽阳，朝阳，铁岭，
+阜新，保定，唐山，烟台，济宁，东营，平顶山，安阳，重庆,南昌,郑州,
+九江,新余,宜春,上饶,临沂,呼伦贝尔,苏州,贵阳,邢台"/>
+    <TextView
+        style="@style/detail"
+        android:id="@+id/tv_give"
+        android:text="【赠送】：赠送蜡烛、餐盘、刀叉等一次性蛋糕用品一套。"/>
+</LinearLayout>
